@@ -2204,6 +2204,7 @@
                 }
                 cerrarModalAuth();
                 actualizarUsuarioUI();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
                 mostrarToast(esRegistro
                     ? `¡Bienvenido/a, ${usuarioActual.nombre}! Cuenta registrada.`
                     : `¡Hola de nuevo, ${usuarioActual.nombre}!`);
